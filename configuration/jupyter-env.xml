@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
-  <property require-input="true">
+  <property>
     <name>spark.home</name>
     <description>SPARK_HOME directory (must be on same node as Jupyter Service)</description>
     <value>/usr/hdp/current/spark-client/</value>
@@ -14,16 +14,16 @@
   <property>
     <name>jupyter.port</name>
     <description>Jupyter Server Port</description>
-    <value>9999</value>
+    <value>8888</value>
   </property>
   <property>
     <name>pid.file</name>
     <value>/var/run/jupyter/server.pid</value>
     <description>Process ID File</description>
-  </property> 
+  </property>
   <property>
     <name>log.dir</name>
     <value>/var/log/jupyter</value>
     <description>Jupyter Notebook Server logfile</description>
-  </property> 
-</configuration> 
+  </property>
+</configuration>
