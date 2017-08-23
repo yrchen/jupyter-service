@@ -23,7 +23,7 @@ linux_users = [user]
 hdfs_users = [user]
 
 # Commands executed in order in master.py
-commands = []
+commands = ['cd /tmp; sh ' + scripts_dir + 'shell/python3.5_setup.sh ' + files_dir]
 # First create all needed dirs
 mkdirs=[root_dir, root_dir + '/notebooks', pid_dir, log_dir, root_dir + '/.jupyter']
 for dir in mkdirs: commands.append('mkdir -p ' + dir)

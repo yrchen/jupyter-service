@@ -205,7 +205,7 @@
 #  platform dependent and determined by the python standard library `webbrowser`
 #  module, unless it is overridden using the --browser (NotebookApp.browser)
 #  configuration option.
-#c.NotebookApp.open_browser = True
+c.NotebookApp.open_browser = False
 
 ## Hashed password to use for web authentication.
 #
@@ -214,7 +214,7 @@
 #    from notebook.auth import passwd; passwd()
 #
 #  The string should be of the form type:salt:hashed-password.
-#c.NotebookApp.password = 'sha1:4cbd748409f9:0628d4f3742c6398acfb792f00fab6da0b20a309'
+c.NotebookApp.password = 'sha1:4cbd748409f9:0628d4f3742c6398acfb792f00fab6da0b20a309'
 
 ## Forces users to use a password for the Notebook server. This is useful in a
 #  multi user environment, for instance when everybody in the LAN can access each
@@ -222,7 +222,7 @@
 #
 #  In such a case, server the notebook server on localhost is not secure since
 #  any user can connect to the notebook server via ssh.
-c.NotebookApp.password_required = False
+#c.NotebookApp.password_required = True
 
 ## The port the notebook server will listen on.
 c.NotebookApp.port = 8888
