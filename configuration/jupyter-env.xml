@@ -4,7 +4,7 @@
   <property>
     <name>spark.home</name>
     <description>SPARK_HOME directory (must be on same node as Jupyter Service)</description>
-    <value>/usr/hdp/current/spark-client/</value>
+    <value>/usr/hdp/current/spark2-client</value>
   </property>
   <property>
     <name>jupyter.user</name>

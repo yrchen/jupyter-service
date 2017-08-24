@@ -18,10 +18,10 @@ sed -i '6s@.*@c.NotebookApp.port = '$JUPYTER_PORT'@' $ROOT_DIR/.jupyter/jupyter_
 
 # Set up bashrc for ipython user
 echo "export HADOOP_HOME=/usr/hdp/current/hadoop-client" > $BASH_PROFILE
-echo "export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk.x86_64"  >> $BASH_PROFILE
+echo "export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-2.b16.el6_9.x86_64" >> $BASH_PROFILE
 echo "export YARN_CONF_DIR=/etc/hadoop/conf" >> $BASH_PROFILE
 echo "export HADOOP_CONF_DIR=/etc/hadoop/conf" >> $BASH_PROFILE
 echo "export PATH=$PATH:/usr/local/bin" >> $BASH_PROFILE
-echo "export SPARK_HOME=$SPARK_HOME/" >> $BASH_PROFILE
+echo "export SPARK_HOME=$SPARK_HOME" >> $BASH_PROFILE
 echo 'export PYSPARK_PYTHON="/usr/local/bin/python3.5"' >> $BASH_PROFILE
 echo 'export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH' >> $BASH_PROFILE
